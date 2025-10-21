@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osheen Divansha | Beauty Care & Boutique in Jaipur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-gold': '#B8860B',
+                        'secondary-pink': '#e5e5e5',
+                        'accent-dark': '#1f2937',
+                        'custom-pink': '#E91E63',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        .playfair { font-family: 'Playfair Display', serif; }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #E91E63;
+            margin: 0.5rem auto 0;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+<header class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold playfair text-custom-pink tracking-wider">Osheen Divansha</div>
+        <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <a href="#services" class="hover:text-custom-pink transition duration-300">Beauty Care</a>
+            <a href="#boutique" class="hover:text-custom-pink transition duration-300">Boutique & Design</a>
+            <a href="#about" class="hover:text-custom-pink transition duration-300">Our Story</a>
+            <a href="#contact" class="hover:text-custom-pink transition duration-300">Contact & Visit</a>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-custom-pink focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-4 space-y-2 border-t">
+        <a href="#services" class="block py-2 px-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-custom-pink">Beauty Care</a>
+        <a href="#boutique" class="block py-2 px-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-custom-pink">Boutique & Design</a>
+        <a href="#about" class="block py-2 px-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-custom-pink">Our Story</a>
+        <a href="#contact" class="block py-2 px-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-custom-pink">Contact & Visit</a>
+    </div>
+</header>
+
+<section class="relative bg-accent-dark h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+    <img src="elegant-bridal-makeover.jpg" 
+         onerror="this.onerror=null; this.src='https://placehold.co/1200x600/000000/FFFFFF?text=Image+Not+Found';"
+         alt="Luxury Bridal Makeup and Salon Services" 
+         class="absolute inset-0 w-full h-full object-cover opacity-50 transition duration-500 ease-in-out hover:opacity-70">
+    <div class="relative z-10 text-center text-white p-6 backdrop-blur-sm bg-black/30 rounded-lg shadow-2xl">
+        <h1 class="text-4xl sm:text-6xl font-extrabold playfair mb-3 tracking-tight">Crafting Your Radiance</h1>
+        <p class="text-xl sm:text-2xl font-light mb-8 max-w-xl mx-auto">Beauty Care, Bridal Excellence & Custom Fashion Design</p>
+        <a href="#services" class="inline-block bg-custom-pink hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+            Explore Our Collections
+        </a>
+    </div>
+</section>
+
+<section id="services" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold playfair mb-4 text-gray-900 section-title">Signature Beauty Care</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">From everyday grooming to the most important day of your life, we ensure flawless, personalized beauty experiences.</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-secondary-pink p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                <img src="bridal-makeup.webp" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/DDA0DD/FFFFFF?text=Bridal';"
+                     alt="Bridal Makeup Service" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold playfair text-custom-pink mb-2">Bridal & HD Makeovers</h3>
+                <p class="text-gray-600 text-sm">Expert HD and airbrush makeup to create a stunning, long-lasting look for your wedding, engagement, and reception.</p>
+            </div>
+
+            <div class="bg-secondary-pink p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                <img src="hair.webp" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/A9A9A9/FFFFFF?text=Salon';"
+                     alt="Salon Services" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold playfair text-custom-pink mb-2">Advanced Salon Services</h3>
+                <p class="text-gray-600 text-sm">Comprehensive hair styling, rejuvenating facials, professional nail art, and essential beauty treatments.</p>
+            </div>
+
+            <div class="bg-secondary-pink p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                <img src="party-makeup.jpg" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/F08080/FFFFFF?text=Party';"
+                     alt="Party Makeup Service" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold playfair text-custom-pink mb-2">Occasion & Party Looks</h3>
+                <p class="text-gray-600 text-sm">Perfect makeup for family events, corporate parties, and photoshoots—designed to make you shine under any light.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="boutique" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+            <div class="mb-8 lg:mb-0">
+                <img src="custom-fashion-design.webp" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/800x600/6A5ACD/FFFFFF?text=Boutique';"
+                     alt="Custom Fashion and Blouse Designing" class="w-full h-auto object-cover rounded-xl shadow-2xl transition duration-500 hover:scale-[1.02]">
+            </div>
+            <div class="text-center lg:text-left">
+                <h2 class="text-4xl font-bold playfair mb-4 text-gray-900 section-title lg:mx-0">The Osheen Boutique</h2>
+                <p class="text-lg text-gray-600 mb-6">Beyond beauty, we are your destination for exclusive, custom-designed apparel. The perfect outfit requires the perfect fit and unique style.</p>
+                <ul class="text-left text-gray-700 space-y-3 mb-8 inline-block lg:block">
+                    <li class="flex items-center">Custom Blouse Designing</li>
+                    <li class="flex items-center">Tailored Apparel & Alterations</li>
+                    <li class="flex items-center">High-Quality Fabric and Craftsmanship</li>
+                </ul>
+                <a href="mailto:info@osheendivansha.com" class="inline-block bg-accent-dark hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Book a Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-16 bg-custom-pink">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <blockquote class="text-2xl md:text-3xl italic playfair mb-4">"The finest beauty experience coupled with bespoke fashion design in the heart of Jaipur."</blockquote>
+        <p class="text-sm font-light uppercase tracking-widest">- Osheen Divansha, Founder</p>
+    </div>
+</section>
+
+<section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold playfair mb-4 text-gray-900 section-title">Visit & Connect</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">We welcome you to our studio in Mansarovar. Schedule your appointment today.</p>
+        <div class="grid md:grid-cols-2 gap-10 text-left">
+            <div class="p-6 bg-secondary-pink rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-custom-pink mb-4">Contact Details</h3>
+                <p>Call Us: +91 82792 78453</p>
+                <p>Email: info@osheendivansha.com</p>
+                <p>Address: 122/63, Near Vijay Path Bus Stop, Mansarovar, Jaipur, Rajasthan - 302020</p>
+            </div>
+            <div class="p-6 bg-secondary-pink rounded-xl shadow-lg">
+                <img src="osheen-map.png" alt="Map Placeholder" class="w-full h-full object-cover rounded-lg">
+                <a href="https://maps.app.goo.gl/8V5VburyeQuduPrC7" target="_blank" class="block mt-4 bg-custom-pink hover:bg-pink-700 text-white py-2 rounded-full">Get Directions</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-accent-dark text-white py-8 text-center">
+    <p>&copy; 2025 Osheen Divansha Beauty Care & Boutique. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
